@@ -1,0 +1,62 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65,5%;
+}
+body {
+    font-size: 1,6rem;
+    color: #333;
+}
+footer {
+    font-size: 1.2rem;
+    color: rgb(235, 225, 225);
+    background: black;
+}
+
+
+div {
+    margin: 40px auto;
+}
+
+#graficos-01 {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 55%;
+}
+#graficos-01 img {
+      width: 100%;
+}
+#graficos-02 {
+    background: transparent;
+    border-style: solid;
+    border-width: 60px 0 60px 120px;
+    border-color: transparent transparent transparent blue;
+    width: 60px;
+    padding: auto;
+
+}
+
+#imagem {
+    width: 200px;
+} 
+#canvas {
+    height: 300px;
+    width: 300px;
+}
+/*filtros*/
+#graficos-01 {
+     filter: drop-shadow(8px 8px 10px #333);
+     max-width: 100%;
+}
+.filtros {
+    filter: grayscale(100%);/*escla de cinza*/
+    filter: blur(5px);/*desfoque*/
+    filter: brightness(50%);/*brilhor 100= é igual ao normal*/
+    filter: invert(100%);/*inversao de cores*/
+    filter: opacity(50%);/*opacidade*/
+    filter: saturate(200%) sepia(100%);/*separar filtro separado com espaço*/
+}
+.filtros:hover{
+    filter: grayscale(0%);
+}

@@ -1,0 +1,24 @@
+body {
+    background: rgb(235, 235, 128);
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+table {
+     border-collapse: collapse;
+     width: 100%;
+
+}
+table th, td {
+    border: solid black;
+}
+table thead {
+     background: black;
+     color: antiquewhite;
+     border: solid black;
+}
+tfoot {
+    background:white;
+}

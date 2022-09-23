@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+header {
+   max-width: 100%;
+   background-color: black;
+   color: white;
+    padding: 30px;
+    height: 40%;
+    text-align: center;
+    
+}
+nav {
+    margin: 1rem;  
+    width: 15%;
+    background-color: rgb(230, 228, 204);
+    padding: 15px;
+    height: 400px;
+    float: left;
+   
+
+
+}
+article {
+    margin-top: 1px solid;
+     max-width: 100%;
+    background-color: rgb(218, 218, 201);
+    padding: 40px;
+    height: auto;
+    
+}
+footer {
+    clear: both;
+    margin-top: 1px solid;
+    max-width: 100%;
+    background-color: black;
+    padding: 20px;
+    height: 30px;
+    text-align: center;
+    color: white;
+}
+ li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: rgb(226, 218, 218);
+    background: rgba(151, 145, 145, 0.8);
+    padding: 6px;
+    text-align: center;
+ }
+ .coluna {
+    display: block;
+    width: 33.3%;
+    float: left;
+ }
+
+ .coluna-3 {
+    columns: 100px 2;
+    width: 50%;
+ }
+ iframe {
+    width: 25%;
+    padding: 30px;
+ }
+ .colunaw {
+    width: 100%;
+    text-align: center;
+    
+ }
+ .coluna2 {
+    width: 100%;
+    
+ }
+
+ #graficos-01 {
+    filter: drop-shadow(22, 02,08,05);
+    filter: opacity(50%);
+    filter: blur(40%);
+ }
+ #graficos-01:hover {
+    filter: grayscale(100%);
+ }
+ @media (max-width: 425px){
+    li {
+        max-width: 100%;
+        font-size: 10px;
+        color: white;
+    }
+    nav,
+    article,
+    .coluna{
+        width: 80%;
+    }
+    nav{
+        height: 80px;
+    }

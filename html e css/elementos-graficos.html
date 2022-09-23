@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/graficos.css">
+    <title>elementos graficos</title>
+</head>
+<body>
+    <h1>elementos graficos</h1>
+    <div id="graficos-01">
+      <img src="./images/depositphotos_139593836-stock-photo-background-with-assorted-coffee.jpg" alt="imagem">
+    </div>
+
+    <div id="graficos-02">
+
+    </div>
+
+    <div id="imagem">
+    <img src="./images/grooming-1801287.svg" alt="vertor">
+    </div>
+ 
+     <div>
+        <canvas id="canvas"></canvas>
+     </div>
+    
+     <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getcontext("2d");
+        ctx.fillstyle = "#00FF99";
+        ctx.fillRect(80, 0, 100, 80);
+     </script>
+
+</body>
+</html>

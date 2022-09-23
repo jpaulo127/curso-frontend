@@ -1,0 +1,254 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+
+/* 
+
+	Herança
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+
+html {
+	font-family: sans-serif;
+	color: #333333;
+}
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+
+header h2 {
+	font-weight: 100;
+}
+
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	background: #FF0;
+	color: #333;
+}
+
+h2 ~ h5 {
+	font-size: 1.2rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+
+/* Pseudo-classes */
+
+section li {
+	color: #030303;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+section h3{
+       font-size: 30px;
+	   font-family: Arial, Helvetica, sans-serif;
+
+}
+article li {
+	color: rgb(8, 8, 8);
+	font-size: 18px;
+	font-weight: bold;
+    background: #6699cc;
+}
+article h1 {
+	font-size: 30px;
+	padding: 15px;
+}
+
+li:visited {
+	color: #f00;
+}
+
+li:active {
+	color: #096;
+}
+
+li:hover {
+	color: #009;
+	background: #eee;
+}
+
+h2:hover {
+	color: #888;
+}
+
+
+/* 
+	Tipografia
+*/
+
+html {
+	font-family: sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+	font-family: 'Limelight', cursive;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+h3 {
+	/* declaração resumida / completa */
+	font: italic bold 1.2rem/2 sans-serif;
+}
+
+
+/* 
+
+	Cores
+
+*/
+
+body {
+	background: url('../images/pattern.png') center top repeat #EEEEEE;
+}
+
+section {
+	background: rgba(253, 248, 248, 0.95);
+	height: 600px;
+}
+
+p {
+	color: blue;
+	color: #034589;
+	font-size: 18px;
+}
+header {
+	text-align: center;
+	font-size: 30px;
+}
+
+header,
+footer {
+	background-color: #034589;
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+}
+
+.navegacao {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0.5rem;
+}
+
+.table-container {
+	width: 100%;
+	overflow: scroll;
+}
+
+footer {
+	height: 40px;
+	text-align: center;
+}
+
+.navegacao li a {
+	color: rgb(3, 3, 3);
+	font-size: 1.4rem;
+}
+
+.navegacao li a:hover {
+	background-color: rgba(150, 150, 200, .5);
+	color: #333333;
+}
+table th, td{
+	border: solid black;
+	width: 100px;
+}
+thead, tbody{
+	border: solid black;
+}
+thead {
+	background: #455192;
+	color: #030303;
+    text-align: center;
+}
+.center {
+	text-align: center;
+}
+tfoot tr {
+	background: #009;
+    color: #EEEEEE;
+}
+ 
+@media (max-width: 425px) {
+	* {
+		width: 100%;
+	}
+
+	header {
+		text-align: center;
+	}
+	
+    footer {
+		text-align: center;
+		padding: 10px;
+	}
+	
+
+	div h3 {
+       text-align: center;
+	   width: 100%;
+	}
+	.table-container {
+		max-width: 100%;
+	}
+	tbody tr, td,
+	tfoot tr, td {
+		width: 50%;
+		overflow: scroll;
+		font-size: 7px;
+	}
+	
+}
