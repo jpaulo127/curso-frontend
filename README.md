@@ -26,7 +26,22 @@ mac (brew) brew install git
 ## Commits
 Informação de alterções
 -apôs testados tofdos são codigos
+-git add
+-git push (enviar informações para o repositorio gitHub)
+-git pull (puxar/trazer informações do gitHub para maquina)
  
 ## Gitflow
 fluxo do Git
 
+
+### branchs
+São ramificações / versões de pararelas
+
+-main / master
+-devolop
+-DDD Definition of Done:Criterio  de aceite
+-Versionamento 1.0.0
+git checkout -b dev (criar uma branch)
+git checkout master (mudar de branch)
+### marge
+mesclar de branchcs
