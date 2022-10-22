@@ -57,9 +57,12 @@
     </footer>
 
     <script>
-        window.alert("primeiro alerta")
-        window.confirm("por favor confirme seus dados")
-        window.prompt("Qual seu nome?")
+        var n1 = Number(window.prompt("Digite um numero")) // string
+        var n2 = Number(window.prompt("Digite outro numero")) // string
+        var s = n1 + n2
+        window.alert(`A a soma de ${n1} e ${n2} é igual ${s}`) // concatenação
+        //(number + number) para adicao
+        // (string + string) para concatenação
     </script>
 
 </body>
