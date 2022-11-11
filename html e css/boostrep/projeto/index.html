@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="./bootstrap/bootstrap-5.2.2-dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="style/custom.css">
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <header>
+      <div class="conteiner">
+        <div class="row">
+          <div class="col">
+           <img src="./images/logo.jpg" alt="logo" width="120px">
+          </div>
+          <div class="col">
+             <ul class="nav justify-content-end">
+             <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+             <li class="nav-item"><a class="nav-link" href="#Produtos">Produtos</a></li>
+             <li class="nav-item"><a class="nav-link"  href="#Sobre">Sobre</a></li>
+             <li class="nav-item"><a class="nav-link" href="#Contatos">Contatos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="sobre">
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                 <h1>Sobre nós</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ea ut molestiae omnis nihil alias quasi, odio rerum, quam enim at libero sunt nesciunt adipisci doloribus amet. Nostrum, ratione! Assumenda!</p>
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veniam, in omnis consequuntur recusandae molestiae architecto culpa expedita quos eveniet ipsam similique! Asperiores nobis sit ad eius cumque, accusantium molestiae?</P>
+                  <a class="btn bnt-lg btn-success">botao</a>
+              </div> 
+              <div class="col-md-5 col-sm-12">
+                <img src="./images/pexels-designecologist-1779487.jpg" alt="cabeçalho" class="img-fluid">
+              </div>
+           </div>
+      </div>      
+      </section>
+     <section id="produtos">
+      <div class="conteiner">
+        <div class="row">
+          <div class="col">
+            <h2>Produtos</h2>
+            <div class="card">
+              <img src="./images/fone.jpg" alt="imagem exemplo" class="img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quidem maiores in</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente eum provident maiores</p>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produtos</a>
+              </div>
+             </div>
+             <div class="card">
+              <img src="./images/relogio.jpg" alt="imagem exemplo" class="img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quidem maiores in</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente eum provident maiores</p>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produtos</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/pexels-math-249324.jpg" alt="imagem exemplo" class="img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quidem maiores in</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente eum provident maiores</p>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produtos</a>
+          </div>
+        </div>
+      </div>
+     </section>
+     <section id="contatos">
+      <div class="conteiner">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h2>Contato</h2>
+            <p>Ficou interessado? Preencha os compos do formuario para receber uma cotaçõa </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <form class="form">
+           <div class="input-group">
+            <input class="form-contol" type="text" data-="" name="nome" placeholder="digite seu nome">
+           </div>
+           <div class="input-group">
+            <input class="form-contol" type="text" name="email" placeholder="digite seu email">
+           </div>
+           <textarea class="form-control" name="" rows="5"></textarea>
+          <button type="submit" class="btn btn-lg btn-success">Solicitar cotação</button> 
+            </form>
+          </div>
+        </div>
+      </div>
+     </section>
+      <!--tabela modal 1-->
+      <div class="modal fade" id="modal-1">
+         <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">produto-1</h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Confira os preços</h6>
+                  <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                      <th>tamanho</th>
+                      <th>valor</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Simples</td>
+                        <td>R$:100</td>
+                      </tr>
+                      <tr>
+                        <td>top</td>
+                        <td>R$:200</td>
+                      </tr>
+                      <tr>
+                        <td>Gamer</td>
+                        <td>R$:300</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Boas compras</td>
+                        <td>volte sempre</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+            </div>
+          </div>
+         </div>
+      </div>
+
+     <!--tabela modal 2-->
+      <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title">produto-2</h5>
+             <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+           </div>
+           <div class="modal-body">
+               <h6>Confira os preços</h6>
+                 <table class="table table-hover table-striped">
+                   <thead>
+                   <tr>
+                     <th>tamanho</th>
+                     <th>valor</th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                     <tr>
+                       <td>Simples</td>
+                       <td>R$:100</td>
+                     </tr>
+                     <tr>
+                       <td>top</td>
+                       <td>R$:200</td>
+                     </tr>
+                     <tr>
+                       <td>2 top</td>
+                       <td>R$:300</td>
+                     </tr>
+                   </tbody>
+                   <tfoot>
+                     <tr>
+                       <td>Boas compras</td>
+                       <td>volte sempre</td>
+                     </tr>
+                   </tfoot>
+                 </table>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+           </div>
+         </div>
+        </div>
+     </div>
+
+      <!--tabela modal 3-->
+     <div class="modal fade" id="modal-3">
+      <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+             <h5 class="modal-title">produto-2</h5>
+           <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+         </div>
+         <div class="modal-body">
+             <h6>Confira os preços</h6>
+               <table class="table table-hover table-striped">
+                 <thead>
+                 <tr>
+                   <th>tamanho</th>
+                   <th>valor</th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <td>32 GB</td>
+                     <td>R$:1000</td>
+                   </tr>
+                   <tr>
+                     <td>64 GB</td>
+                     <td>R$:1600</td>
+                   </tr>
+                   <tr>
+                     <td>128 GB</td>
+                     <td>R$2000</td>
+                   </tr>
+                 </tbody>
+                 <tfoot>
+                   <tr>
+                     <td>Boas compras</td>
+                     <td>volte sempre</td>
+                   </tr>
+                 </tfoot>
+               </table>
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+         </div>
+       </div>
+      </div>
+   </div>
+   <footer>logo.com</footer>
+
+    <script src="./bootstrap/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
