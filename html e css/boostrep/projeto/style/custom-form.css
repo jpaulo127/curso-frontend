@@ -1,0 +1,25 @@
+textarea{
+    width: 100% ! important;
+    display: block;
+}
+.imagem {
+    width: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   color: rgb(44, 46, 46);
+}
+.imagemlogo {
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: brown;
+    text-align: center;
+}
+.cardstyle p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(198, 119, 84);
+}
+.cardstyle h2 {
+    color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
